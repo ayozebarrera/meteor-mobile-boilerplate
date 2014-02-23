@@ -7,7 +7,8 @@ $header-color: #f6f6f7;
   font-height: 1em;
 }
 
-.status-bar {
+// If iOS and fullscreen, add spacer for status bar
+.ios.fullscreen .status-bar {
   height: 15px;
   background-color: $header-color;
 }
