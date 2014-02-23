@@ -1,5 +1,25 @@
+$header-color: #f6f6f7;
+
 .header {
-  height: 44px + 15px;
-  background-color: #f6f6f7;
+  height: 44px;
+  background-color: $header-color;
+  border-bottom: 1px solid rgba(0,0,0,.3);
+  font-height: 1em;
+}
+
+.status-bar {
+  height: 15px;
+  background-color: $header-color;
+}
+
+.hdr-text {
+  overflow: hidden;
+  padding-top: 12px;
+
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
