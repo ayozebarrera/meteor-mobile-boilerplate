@@ -1,22 +1,31 @@
 <template name='header'>
-
-<div class="status-bar"></div>
-<div class='header hbox'>
-  <div class="hdr-btn hdr-btn-left">
-    <div class="hdr-btn-text">
-      Back
-    </div>
+  <div class="status-bar"></div>
+  <div class='header hbox'>
+    {{> content}}
   </div>
-
-  <div class="hdr-middle flex1">
-    <div class="hdr-text">{{middleText}}</div>
-  </div>
-
-  <div class="hdr-btn hdr-btn-right">
-    <div class="hdr-btn-text">
-      New
-    </div>
-  </div>
-</div>
-
 </template>
+
+
+<template name='headerButton'>
+  <div class="hdr-btn">
+    {{> content}}
+  </div>
+</template>
+
+
+<template name='middleText'>
+  <div class="hdr-middle flex1">
+    <div class="hdr-text">
+      {{> content}}
+    </div>
+  </div>
+</template>
+
+
+<!-- Header Buttons -->
+<template name='textButton'>
+  <div class="hdr-btn-text">
+    {{this}}
+  </div>
+</template>
+

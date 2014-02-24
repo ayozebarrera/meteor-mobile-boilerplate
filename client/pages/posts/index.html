@@ -1,7 +1,15 @@
 <template name='posts'>
 
 <div class='posts'>
-  Hello World
+  {{# header}}
+    {{#headerButton}} {{> textButton 'Back'}} {{/headerButton}}
+    {{#middleText}}   Meteor Mobile Demo      {{/middleText}}
+    {{#headerButton}} {{> textButton 'New'}}  {{/headerButton}}
+  {{/ header}}
+
+  <br>
+  Find me in: <br>
+  client/pages/posts/index.html
 </div>
 
 </template>
