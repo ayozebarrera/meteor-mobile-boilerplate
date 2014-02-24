@@ -1,15 +1,16 @@
 $header-color: #f6f6f7;
 
+ 
 .header {
   height: 44px;
   background-color: $header-color;
-  border-bottom: 1px solid rgba(0,0,0,.3);
   font-height: 1em;
+  @include retina-border(#A7A7A7, bottom);
 }
 
 // If iOS and fullscreen, add spacer for status bar
 .ios.fullscreen .status-bar {
-  height: 15px;
+  height: 20px;
   background-color: $header-color;
 }
 
