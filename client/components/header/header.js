@@ -27,3 +27,14 @@ function adjustCenterHeaderMargins() {
   });
 }
 
+
+// Global Button Events, these fire anywhere they're included. I usually
+// trigger events from the page template but some buttons like back are nice
+// to listen globally. May want to break out into another file if you have many
+
+Template.backButton.events({
+  'click': function() {
+    history.back();
+  }
+});
+
