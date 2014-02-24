@@ -1,0 +1,66 @@
+// Old and new flexbox props
+
+
+@mixin flex($val) {
+  -webkit-box-flex: $val;   // OLD - iOS 6-, Safari 3.1-6
+  -moz-box-flex: $val;      // OLD - Firefox 19-
+  -webkit-flex: $val;       // Chrome
+  -ms-flex: $val;           // IE 10
+  flex: $val;               // NEW, Spec - Opera 12.1, Firefox 20+ 
+}
+
+
+@mixin flex-flow($pos) {
+  @if ($pos == column) {
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-flex-flow: column;
+    flex-flow: column;
+  }
+  @if ($pos == row) {
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    box-orient: horizontal;
+    -webkit-flex-flow: row;
+    flex-flow: row; 
+  }
+}
+
+
+.flex1 {
+  @include flex(1);
+}
+
+
+.flex0 {
+  @include flex(0);
+}   
+
+
+.flex-container {
+  display: -webkit-box;    // OLD - iOS 6-, Safari 3.1-6
+  display: -moz-box;       // OLD - Firefox 19- (buggy but mostly works)
+  display: -ms-flexbox;    // TWEENER - IE 10
+  display: -webkit-flex;   // new - chrome
+  display: flex;           // new, spec - opera 12.1, firefox 20+
+
+  -webkit-box-align: stretch;
+  -moz-box-align: stretch; 
+  -ms-flex-align: stretch; 
+  -webkit-align-items: stretch;
+  align-items: stretch;
+}
+
+
+.vbox {
+  @extend .flex-container;
+  @include flex-flow(column);
+}
+
+
+.hbox {
+  @extend .flex-container;
+  @include flex-flow(row);
+}                                 
+

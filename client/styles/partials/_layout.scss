@@ -1,0 +1,75 @@
+
+html, body, .container {
+  height: 100%;
+  overflow: hidden;
+} 
+
+
+/* Slim vertical ul list */
+ul.vert-list {
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+
+/* Slim horizontal jist */
+ul.horz-list {
+  @extend .cf;
+  & > li { float: left; }
+}
+
+
+/* Floats */
+.left,  .pull-left  { float: left !important; }
+.right, .pull-right { float: right !important; }
+
+
+/* Align Text */
+.text-left    { text-align: left    !important; }
+.text-right   { text-align: right   !important; }
+.text-center  { text-align: center  !important; }
+.text-justify { text-align: justify !important; }
+
+
+/* Clearfix */
+.cf:after,
+.container:after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
+
+.hide-text {
+   text-indent: 100%;
+   white-space: nowrap;
+   overflow: hidden;
+}
+
+
+ // native scroll container
+.scroll {
+  position: relative;
+  height: 101%;
+  height: calc(100% - 64px);
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}   
+   
+
+.inner-scroll {
+  min-height: 118%;
+  min-height: calc(100% + 1px);
+
+  // used for scrolling inputs upward
+  &.double-height {
+    height: 250%
+  }
+} 
