@@ -23,4 +23,4 @@ UI components.
 <br>
 
 **Screenshot: Sun 2-23**  
-![](http://f.cl.ly/items/2N2I3v2V1p0B1c042G05/Screen%20Shot%202014-02-23%20at%206.41.46%20PM.png)
+![](http://f.cl.ly/items/2I1S3S111U0Z1U353e3t/Screen%20Shot%202014-02-23%20at%207.57.15%20PM.png)
