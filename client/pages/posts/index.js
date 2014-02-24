@@ -3,8 +3,8 @@ Template.posts.helpers({
 });
 
 Template.posts.events({
-  'click .hdr-btn': function() {
-    alert('Not done yet');
+  'click .btn-edit': function() {
+    alert('Listening and firing from posts/index.js');
   }
 });
 
