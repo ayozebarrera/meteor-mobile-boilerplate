@@ -52,7 +52,7 @@
       width: calc(100% - 20px);
       height: 1px;
       content: '';
-      @include retina-border(#ACACAC, top)
+      @include retina-border(#ACACAC, top);
     }
 
     .toggle-switch {

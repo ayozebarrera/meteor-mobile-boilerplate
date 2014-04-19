@@ -1,14 +1,14 @@
 <template name='header'>
   <div class="status-bar"></div>
   <div class='header hbox'>
-    {{> content}}
+    {{> UI.contentBlock}}
   </div>
 </template>
 
 
 <template name='headerButton'>
-<div class="hdr-btn {{class}}">
-    {{> content}}
+  <div class="hdr-btn {{class}}">
+    {{> UI.contentBlock}}
   </div>
 </template>
 
@@ -16,7 +16,7 @@
 <template name='middleText'>
   <div class="hdr-middle flex1">
     <div class="hdr-text">
-      {{> content}}
+      {{> UI.contentBlock}}
     </div>
   </div>
 </template>
