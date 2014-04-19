@@ -1,7 +1,7 @@
 
 @mixin retina-border($color, $pos){
-  background-image: -webkit-linear-gradient(bottom, $color, $color 50%, transparent 50%);
-  background-image: linear-gradient(bottom, $color, $color 50%, transparent 50%);
+  background-image: -webkit-linear-gradient($pos, $color, $color 50%, transparent 50%);
+  background-image: linear-gradient($pos, $color, $color 50%, transparent 50%);
   background-position: $pos;
   background-repeat: no-repeat;
   background-size: 100% 1px;

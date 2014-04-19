@@ -9,6 +9,7 @@ Template.posts.events({
 });
 
 Template.posts.rendered = function() {
-  
+  // add class to cancel out first cell border, TODO convert to css selector
+  $('.tableview-cell').first().addClass('first-cell');
 };
 
