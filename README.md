@@ -22,5 +22,5 @@ UI components.
 
 <br>
 
-**Screenshot: Sun 2-23**  
-![](http://f.cl.ly/items/2I1S3S111U0Z1U353e3t/Screen%20Shot%202014-02-23%20at%207.57.15%20PM.png)
+
+![](http://cl.ly/image/0I3I0D2p060N/meteor-mobile-boilerplate.png)
